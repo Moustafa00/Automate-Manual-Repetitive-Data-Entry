@@ -24,12 +24,13 @@ CREATE TABLE sales_orders
 
 /* Create sequence */
 CREATE SEQUENCE sales_orders_sequence
-  START WITH 0
+  START WITH 1
   MAXVALUE 9999999999
   MINVALUE 1
   NOCYCLE
   CACHE 20
   NOORDER;
+
 
 /* Create trigger */
 CREATE OR REPLACE TRIGGER sales_orders_on_insert
